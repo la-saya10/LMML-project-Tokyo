@@ -31,7 +31,7 @@
   display: block;
   font-weight: 500; 
   text-align: right;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -50,7 +50,7 @@
     height: calc(100vh - 60px); 
     background-size: cover;       
     background-position: center;  
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/tokyo.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/tokyo.jpg");
     background-repeat: no-repeat; 
     display: flex;
     align-items: center;       
@@ -61,12 +61,28 @@
 }
 
 .visual-text {
+    backdrop-filter: blur(3px);
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.visual-text h1 {
     text-align: left;
     color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
+.visual-text p {
+    text-align: left;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 550px;
+
+}
 
 
 
