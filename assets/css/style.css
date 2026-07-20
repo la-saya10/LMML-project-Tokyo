@@ -9,36 +9,36 @@ body {
 
 .navbar {
   background-color: #2c3e50;
-  padding: 10px 20px;
   font-family: sans-serif;
-  
-  width: 100%; 
-  box-sizing: border-box; 
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
 }
-
 
 .nav-links {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex; 
-  gap: 20px;     
-  
-  width: 100%; 
-  justify-content: center; 
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
 }
+
 
 
 .nav-links a {
-  color: #ffffff; 
+  color: #ffffff;
   text-decoration: none;
-  padding: 8px 12px;
-  display: block;
-  font-weight: 500; 
-  text-align: right;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1;
 }
-
 
 .nav-links a:hover {
   background-color: #555; 
@@ -243,15 +243,107 @@ body {
 
 
 
+.location-title h1{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
 
 
 
 
 
+/* ギャラリー全体を画面中央に収め、左右に余白を作る */
+.item-gallery {
+  max-width: 1100px;      /* 画面幅いっぱいに広がらないよう制限 */
+  margin: 0 auto;         /* 中央寄せ */
+  padding: 2rem;        /* 画面端との余白 */
+  margin-top: 10px;
+}
 
+/* 3列グリッド */
+.row.g-4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;             /* カード同士の間隔も少し狭める */
+}
 
+@media (max-width: 992px) {
+  .row.g-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
+@media (max-width: 600px) {
+  .item-gallery {
+    padding: 0 1rem;
+  }
+  .row.g-4 {
+    grid-template-columns: 1fr;
+  }
+}
 
+/* 各カード：小さくコンパクトに */
+.item-wrapper {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 400px;        /* カード自体の最大幅を制限 */
+  margin: 0 auto;          /* グリッドセル内で中央寄せ、余白が生まれる */
+}
+
+.item-wrapper:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14);
+}
+
+/* 画像エリア：少し小さめの比率に */
+.img-box {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.item-raw-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* テキストエリア：余白・文字サイズを縮小 */
+.item-description {
+  padding: 0.7rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.item-description h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+.item-description p,
+.item-description .detail-text {
+  font-size: 0.78rem;
+  color: #555;
+}
+
+.item-description a {
+  margin-top: 0.5rem;
+  align-self: flex-start;
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: #b3005e;
+  font-weight: 600;
+}
 
 
 
