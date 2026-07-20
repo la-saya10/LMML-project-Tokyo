@@ -253,36 +253,50 @@ body {
 
 
 
+.filter-buttons {
+  display: flex;
+  justify-content: center;   /* ボタン群全体を画面/親要素の中央に */
+  gap: 12px;
+}
+
+
+
+
+.filter-btn {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 20px;
+  
+  margin-bottom: 50px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.filter-btn.active {
+  background: #2c3e50;
+  color: #fff;
+  border-color: #2c3e50;
+}
+
+
+
+
 
 
 /* ギャラリー全体を画面中央に収め、左右に余白を作る */
 .item-gallery {
-  max-width: 1100px;      /* 画面幅いっぱいに広がらないよう制限 */
+  max-width: 1450px;      /* 画面幅いっぱいに広がらないよう制限 */
   margin: 0 auto;         /* 中央寄せ */
-  padding: 2rem;        /* 画面端との余白 */
+  padding: 0 1rem;        /* 画面端との余白 */
   margin-top: 10px;
 }
 
 /* 3列グリッド */
 .row.g-4 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;             /* カード同士の間隔も少し狭める */
-}
-
-@media (max-width: 992px) {
-  .row.g-4 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .item-gallery {
-    padding: 0 1rem;
-  }
-  .row.g-4 {
-    grid-template-columns: 1fr;
-  }
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  gap: 1rem;
 }
 
 /* 各カード：小さくコンパクトに */
@@ -294,7 +308,7 @@ body {
   display: flex;
   flex-direction: column;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  max-width: 400px;        /* カード自体の最大幅を制限 */
+  max-width: 700px;        /* カード自体の最大幅を制限 */
   margin: 0 auto;          /* グリッドセル内で中央寄せ、余白が生まれる */
 }
 
@@ -323,6 +337,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
+
+  
 }
 
 .item-description h3 {
@@ -337,12 +353,22 @@ body {
 }
 
 .item-description a {
-  margin-top: 0.5rem;
+ 
+  margin-bottom: 4px;
   align-self: flex-start;
   font-size: 0.85rem;
   text-decoration: none;
   color: #b3005e;
   font-weight: 600;
+
+
+
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;  
+  background: #f6f8fa;
+  border: 1px solid #b3005e;
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 
