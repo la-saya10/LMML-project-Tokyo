@@ -8,7 +8,29 @@ L.tileLayer(
   }
 ).addTo(map);
 
-const marker = L.marker([35.6595, 139.7005]).addTo(map);
+const locations = [
+  {
+    name: 'Suga Shrine',
+    lat: 35.68516284592106,
+    lng: 139.7233299522509
+  },
+  {
+    name: 'Shinjuku',
+    lat: 35.6895,
+    lng: 139.6917
+  },
+  {
+    name: 'Shibuya Crossing',
+    lat: 35.6580,
+    lng: 139.7016
+  }
+];
+
+locations.forEach(location => {
+  L.marker([location.lat, location.lng])
+    .addTo(map)
+    .bindPopup(location.name);
+});
 
 marker.on('click', function(){
     document.getElementById("info-panel").style.display = "block";
