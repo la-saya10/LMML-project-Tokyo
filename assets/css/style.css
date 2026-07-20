@@ -1,9 +1,14 @@
+body {
+  background-color:  #FAF3E0 !important;
+  margin: 0;
+}
+
 /** ══════════════════════════════════════════
      NAV BAR
 ══════════════════════════════════════════ **/
 
 .navbar {
-  background-color: #000000;
+  background-color: #2c3e50;
   padding: 10px 20px;
   font-family: sans-serif;
   
@@ -84,13 +89,17 @@
 
 }
 
-
+.link-row {
+  display: flex;      /* 横並びにする */
+  gap: 16px;            /* リンク同士の間隔 */
+}
 
 .link-row a {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   padding: 8px 16px;
+  
   background: #f6f8fa;
   border: 1px solid #d0d7de;
   border-radius: 6px;
@@ -101,19 +110,136 @@
   transition: background 0.2s ease, border-color 0.2s ease;
 }
 
+#info-film {
+  scroll-margin-top: 100px;
+}
+
+.info-film h1 {
+  text-align: left;
+  margin-top: 40px;
+  margin-left: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+}
+
+.film {
+  margin-left: 40px;
+  width: 700px;
+  margin-bottom: 80px;
+}
+
+.film h1 {
+  text-align: left;
+  margin: 40px 0 0 0;   /* 上40px、右0、下0、左0 */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 
-/** ══════════════════════════════════════════
-     MAP
-══════════════════════════════════════════ **/
-#map {
-  width: 100%;
-  height: 700px;   /* または 80vh など、必ず数値指定が必要 */
+.film p {
+  text-align: left;
+  color: #082602;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  font-weight: 300;
+
 }
 
 
 
 
+
+
+
+
+
+/** ══════════════════════════════════════════
+     MAP
+══════════════════════════════════════════ **/
+
+.map-wrap {
+  position: relative;   /* ← #info-panelの基準点になる */
+  width: 100%;
+  height: calc(100vh - 60px);   /* ← 480pxから変更 */
+  overflow: hidden;   /* ← これを追加 */
+}
+
+#map {
+  width: 100%;
+  height: 100%;   /* または 80vh など、必ず数値指定が必要 */
+}
+
+
+
+/*-------------------- PANEL--------------------------------*/
+#info-panel {
+    display: block;          
+    width: 30%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: #F5F4EF;
+    padding: 1rem;
+    box-sizing: border-box;
+    z-index: 1000;      /* ← これを追加 */
+
+    transform: translateX(100%);  /* 画面の右外に隠しておく */
+    transition: transform 0.3s ease;  /* transformが変わる時に0.3秒かけて滑らかに動く */
+  }
+
+  
+#info-panel.visible {
+  transform: translateX(0);     /* 元の位置(見える位置)に戻す */
+}
+
+
+#info-image {
+  width: 100%;         /* 親(#info-panel)の幅いっぱいまで広がる、それ以上ははみ出ない */
+  height: auto;          /* 縦横比を保ったまま高さを自動調整 */
+  max-height: 200px;    /* 縦に長すぎる画像対策(任意) */
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 8px 0;         /* 上下に少し余白 */
+  display: block;        /* imgはデフォルトでinlineなので、blockにして余計な隙間を消す */
+  object-position: center 60%;   
+}
+
+#close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: #080303;
+  display: inline-block;   /* 追加 */
+  opacity: 1;               /* 追加 */
+  z-index: 1001;            /* #info-panel(1000)より1つ上にしておく */
+  
+}
+
+#close-btn:hover {
+  background: #eee;   /* ホバー時に薄いグレーの丸背景が出る */
+}
+
+
+#info-title {
+  font-family: Georgia, 'Times New Roman', serif;  /* フォントの種類 */
+  font-size: 1.5rem;                                /* 文字の大きさ */
+  font-weight: bold;                                /* 太さ */
+  color: #333;                                      /* 文字の色 */
+}
+
+#info-desc {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;    /* 行間(複数行になった時に読みやすくなる) */
+}
 
 
 
