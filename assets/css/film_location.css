@@ -103,21 +103,24 @@ body {
 
 
 /** ══════════════════════════════════════════
-     FILTER BUTTON
+     FILTER BUTTONS - Length x Level
 ══════════════════════════════════════════ **/
 
-.set {
+.buttons {
   display: flex;
-
-
+  gap: 80px;
+  margin-top: 40px;
 }
 
-.filter-buttons {
-  margin-left: 80px;
+.length-buttons,
+.control-buttons {
+  gap: 80px;
 }
 
 
-.filter-btn {
+/* Length buttons */
+.length-btn,
+.level-btn {
   padding: 8px 16px;
   border: 1px solid #ccc;
   background: #fff;
@@ -128,12 +131,12 @@ body {
   font-size: 0.9rem;
 }
 
-.filter-btn.active {
+.length-btn.active,
+.level-btn.active {
   background: #2c3e50;
   color: #fff;
   border-color: #2c3e50;
 }
-
 
 
 

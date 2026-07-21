@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../assets/css/film_location.css">
 </head>
 
+
+
+
 <body>
 
     <nav  class="d-flex align-items-center sticky-top navbar">
@@ -22,8 +25,12 @@
 
 
 
-  <div class="location-page">
+<div class="location-page">
 
+
+<!-- ---------------------------------------
+               LEFT SIDE
+--------------------------------------------- -->
   <div class="location-left">
     <div class="location-header">
       <h1>Suga Shrine</h1>
@@ -37,31 +44,83 @@
     </div>
   </div>
 
+
+
+
+<!-- ---------------------------------------
+               RIGHT SIDE
+--------------------------------------------- -->
+
   <div class="location-right">
-    <div class="set">
-      <h2>About the Location</h2>
-      <div class="filter-buttons">
-        <button class="filter-btn active" data-filter="all">Brief</button>
-        <button class="filter-btn" data-filter="live-action">Standard</button>
-        <button class="filter-btn" data-filter="anime">In-depth</button>
+      <div class="set">
+        <h2>About the Location</h2>
       </div>
-    </div>
-    <p>
-      The stairs located inside the Suga shrine is the most iconic location in 
-      <i>Your Name.</i> where Taki and Mistuha meet for the first time in real 
-      life at the end of the film.
 
-    </p>
+      <div class="buttons">
+
+        <div class="length-buttons">
+          <span class="control-label">Length:</span>
+          <button class="length-btn active" data-length="brief">Brief</button>
+          <button class="length-btn" data-length="standard">Standard</button>
+          <button class="length-btn" data-length="indepth">In-depth</button>
+        </div>
+     
+        <!-- Knowledge level -->
+        <div class="control-buttons">
+          <span class="control-label">Level:</span>
+          <button class="level-btn active" data-level="beginner">Beginner</button>
+          <button class="level-btn" data-level="general">General</button>
+          <button class="level-btn" data-level="expert">Expert</button>
+        </div>
+
+      </div>
 
 
 
-    <div class="link-row">
-          <a href="/map.html">Check map of this location</a>
-          <a href="/locations.html">Back to Location List</a>
-    </div>
+          <!-- テキスト：長さ×知識レベルの組み合わせごとに用意 -->
+      <p class="film-text" data-length="brief" data-level="beginner">
+        A steep staircase next to Suga Shrine, famous for appearing in <em>Your Name.</em>
+      </p>
+
+      <p class="film-text" data-length="brief" data-level="general">
+        A steep staircase next to Suga Shrine, famous for appearing in <em>Your Name.</em>
+      </p>
+
+      <p class="film-text" data-length="brief" data-level="expert" style="display: none;">
+        Otokozaka, the steeper of Suga Shrine's two staircases, gained pilgrimage status
+        following its use in <em>Your Name.</em> (2016).
+      </p>
+
+      <p class="film-text" data-length="standard" data-level="beginner" style="display: none;">
+        This staircase is called Otokozaka, meaning "men's slope." It appears in the anime
+        movie <em>Your Name.</em>, and many fans visit it to take photos from the same angle
+        seen in the film.
+      </p>
+
+      <p class="film-text" data-length="standard" data-level="general" style="display: none;">
+        This staircase is called Otokozaka, meaning "men's slope." It appears in the anime
+        movie <em>Your Name.</em>, and many fans visit it to take photos from the same angle
+        seen in the film.
+      </p>
+
+      <p class="film-text" data-length="standard" data-level="expert" style="display: none;">
+        Otokozaka is one of two staircases flanking Suga Shrine in Yotsuya, Shinjuku.
+        Its steep gradient and framing toward the Tokyo skyline closely match the
+        composition used in the film's climactic scene, distinguishing it from the
+        shrine itself as the primary pilgrimage target.
+      </p>
+
+      <!-- 他の組み合わせ（standard×beginnerなど）も同様に必要な分だけ追加 -->
+
+
   </div>
 
+
+
+
+
 </div>
+
 
 
 
@@ -111,6 +170,6 @@
 </footer>
 
 
-
+<script src="../js/film_location.js"></script>  
 </body>
 </html>
