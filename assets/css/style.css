@@ -310,6 +310,7 @@ body {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   max-width: 700px;        /* カード自体の最大幅を制限 */
   margin: 0 auto;          /* グリッドセル内で中央寄せ、余白が生まれる */
+  padding-top: 12px;
 }
 
 .item-wrapper:hover {
@@ -322,6 +323,7 @@ body {
   width: 100%;
   aspect-ratio: 4 / 3;
   overflow: hidden;
+
 }
 
 .item-raw-img {
@@ -329,6 +331,7 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
+ 
 }
 
 /* テキストエリア：余白・文字サイズを縮小 */
