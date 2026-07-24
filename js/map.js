@@ -28,7 +28,25 @@ const locations = [
     lat: 35.675657757141444, 
     lng: 139.71826679648882,
     desc: '有名なスクランブル交差点',
-    image: 'assets/img/meiji_jingu.jpg'
+    image: 'assets/img/meiji_jingu.jpg'  
+  },
+  { name: 'Kaminarimon Gate',
+    lat: 35.711126817669914,
+    lng: 139.79636356300853,
+    desc: '有名なスクランブル交差点',
+    image: 'assets/img/kaminarimon.jpg'
+  },
+   { name: 'Japan National Stadium',
+    lat: 35.677959719769845, 
+    lng: 139.71451643378205,
+    desc: '有名なスクランブル交差点',
+    image: 'assets/img/stadium.jpeg'   
+  },
+  { name: 'Shibuya Scramble Crossing',
+    lat: 35.659506823503065,
+    lng: 139.70055855214449,
+    desc: '有名なスクランブル交差点',
+    image: 'assets/img/scramble_crossing.jpeg'
   }
 ];
 
