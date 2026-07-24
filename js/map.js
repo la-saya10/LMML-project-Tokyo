@@ -22,7 +22,13 @@ const locations = [
     lat: 35.660946952407805,
     lng: 139.72917822346997,
     desc: '有名なスクランブル交差点',
-    image: ''
+    image: 'assets/img/mori_tower.jpg'
+  },
+  { name: 'Meiji Jingu Outer Garden',
+    lat: 35.675657757141444, 
+    lng: 139.71826679648882,
+    desc: '有名なスクランブル交差点',
+    image: 'assets/img/meiji_jingu.jpg'
   }
 ];
 

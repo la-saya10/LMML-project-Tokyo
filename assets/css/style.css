@@ -199,7 +199,7 @@ body {
   max-height: 200px;    /* 縦に長すぎる画像対策(任意) */
   object-fit: cover;
   border-radius: 8px;
-  margin: 8px 0;         /* 上下に少し余白 */
+  margin: 30px 0;         /* 上下に少し余白 */
   display: block;        /* imgはデフォルトでinlineなので、blockにして余計な隙間を消す */
   object-position: center 60%;   
 }
@@ -296,7 +296,7 @@ body {
 /* 3列グリッド */
 .row.g-4 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1rem;
 }
 
@@ -362,7 +362,7 @@ body {
   align-self: flex-start;
   font-size: 0.85rem;
   text-decoration: none;
-  color: #b3005e;
+  color:#2c3e50;
   font-weight: 600;
 
 
@@ -371,7 +371,7 @@ body {
   align-items: center;
   padding: 4px 8px;  
   background: #f6f8fa;
-  border: 1px solid #b3005e;
+  border: 1px solid #2c3e50;
   transition: background 0.2s ease, border-color 0.2s ease;
 }
 
