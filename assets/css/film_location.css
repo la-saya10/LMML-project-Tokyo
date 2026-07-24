@@ -89,6 +89,11 @@ body {
   margin: 0 0 6px 0;
 }
 
+
+/** ══════════════════════════════════════════
+     RIGHT SIDE
+══════════════════════════════════════════ **/
+
 /* 右カラム：映画の記述、縦幅いっぱいに使う */
 .location-right {
   flex: 1;                    /* 残りの幅すべてを使う */
@@ -100,6 +105,16 @@ body {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.set h4,
+.scene h4 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight:bold;
+
+}
+
+.scene {
+  margin-bottom: 40px;
+}
 
 
 /** ══════════════════════════════════════════
@@ -108,8 +123,8 @@ body {
 
 .buttons {
   display: flex;
-  gap: 80px;
-  margin-top: 40px;
+  gap: 60px;
+  margin-top: 20px;
 }
 
 .length-buttons,
@@ -121,12 +136,12 @@ body {
 /* Length buttons */
 .length-btn,
 .level-btn {
-  padding: 8px 16px;
+  padding: 6px 14px;
   border: 1px solid #ccc;
   background: #fff;
   border-radius: 20px;
   
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   cursor: pointer;
   font-size: 0.9rem;
 }
@@ -138,6 +153,10 @@ body {
   border-color: #2c3e50;
 }
 
+.film-text {
+  width: 80%;
+  margin-top: 0;
+}
 
 
 
