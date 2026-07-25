@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rainbow Bridge</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/film_location.css">
+</head>
+
+
+
+
+<body>
+
+    <nav  class="d-flex align-items-center sticky-top navbar">
+    <ul class="nav-links">
+        <li class="dropdown"><a href="/index.html">COVER</a></li>
+        <li class="dropdown"><a href="/map.html">MAP</a></li>
+        <li class="dropdown"><a href="/locations.html">LOCATIONS</a></li>
+        <li class="dropdown"><a href="">About</a></li>
+        <li class="dropdown"><a href="">Documentation</a></li>
+        <li class="dropdown"><a href="">Disclaimer</a></li>
+    </ul>
+    </nav>
+
+
+
+<div class="location-page">
+
+
+<!-- ---------------------------------------
+               LEFT SIDE
+--------------------------------------------- -->
+  <div class="location-left">
+    <div class="location-header">
+      <h1>Rainbow Bridge</h1>
+      <img id="location-img" src="../assets/img/bridge.jpeg">
+    </div>
+
+    <div class="location-details">
+      <p>Film: Lost in Translation, Weathering with You</p>
+      <p>Address: </p>
+      <p>Angle: </p>
+    </div>
+  </div>
+
+
+
+
+<!-- ---------------------------------------
+               RIGHT SIDE
+--------------------------------------------- -->
+
+  <div class="location-right">
+
+      <div class="scene">
+        <h4>Scene</h4>
+        <p>The café where Taki and Okudera wnet on a date.</p>
+      </div>
+
+
+      <div class="set">
+        <h4>About the Location</h4>
+      </div>
+
+      <div class="buttons">
+
+        <div class="length-buttons">
+          <span class="control-label">Length:</span>
+          <button class="length-btn active" data-length="brief">Brief</button>
+          <button class="length-btn" data-length="standard">Standard</button>
+          <button class="length-btn" data-length="indepth">In-depth</button>
+        </div>
+     
+        <!-- Knowledge level -->
+        <div class="control-buttons">
+          <span class="control-label">Level:</span>
+          <button class="level-btn active" data-level="beginner">Beginner</button>
+          <button class="level-btn" data-level="general">General</button>
+          <button class="level-btn" data-level="expert">Expert</button>
+        </div>
+
+      </div>
+
+
+     
+
+
+
+      <!-- テキスト：長さ×知識レベルの組み合わせごとに用意 -->
+      <p class="film-text" data-length="brief" data-level="beginner">
+        Salon de Thé Rond is a café located on the second floor of the National Art 
+        Center, Tokyo, in the Roppongi area.
+      </p>
+
+      <p class="film-text" data-length="brief" data-level="general">
+        Salon de Thé Rond sits atop one of two cone structures inside the National Art 
+        Center in Roppongi, Tokyo, designed by architect Kisho Kurokawa.
+      </p>
+
+      <p class="film-text" data-length="brief" data-level="expert" style="display: none;">
+        Salon de Thé Rond is on the second floor of the National Art Center, Tokyo. It is 
+        built on top of one of the museum’s famous upside-down concrete cones, which is one 
+        of the main features of Kisho Kurokawa’s design. 
+      </p>
+
+      <p class="film-text" data-length="standard" data-level="beginner" style="display: none;">
+        Salon de Thé Rond is a café inside the National Art Center, Tokyo. It is located on the 
+        second floor of the building, and no museum ticket is required to visit, making it 
+        a nice spot to rest during a day of sightseeing.
+      </p>
+
+      <p class="film-text" data-length="standard" data-level="general" style="display: none;">
+        Salon de Thé Rond is one of the cafés at the National Art Center, Tokyo, notable for being 
+        perched atop a large inverted cone structure at the heart of the museum's main hall. The 
+        building, designed by Kisho Kurokawa, features a curved glass facade and two of these cone 
+        structures — this café occupies one, while a Michelin-starred restaurant sits atop the other. 
+        No museum admission is needed to visit, making it a good spot for a break while exploring the 
+        exhibitions.
+      </p>
+
+      <p class="film-text" data-length="standard" data-level="expert" style="display: none;">
+        Otokozaka is one of two staircases flanking Suga Shrine in Yotsuya, Shinjuku.
+        Its steep gradient and framing toward the Tokyo skyline closely match the
+        composition used in the film's climactic scene, distinguishing it from the
+        shrine itself as the primary pilgrimage target.
+      </p>
+
+      <p class="film-text" data-length="indepth" data-level="beginner" style="display: none;">
+        Salon de Thé Rond is a café inside the National Art Center, Tokyo, a large art museum in 
+        the Roppongi area. The building itself was designed by a well-known Japanese architect, 
+        and its most striking feature is a pair of giant, upside-down cone-shaped structures 
+        inside the main hall. The café sits right on top of one of these cones, so diners are 
+        seated in a circle around a kitchen at the center, with the museum's tall glass walls 
+        visible around them.
+
+      </p>
+
+      <!-- 他の組み合わせ（standard×beginnerなど）も同様に必要な分だけ追加 -->
+
+
+  </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<!-- ---------------------------------------
+               FOOTER
+--------------------------------------------- -->
+<footer>
+  <p>LMML - Live Museum of Movie Locations</p>
+  <p>
+    This website was created by Saya Saito, a student of the Digital Humanities 
+    and Digital Knowledge programme at the University of Bologna, 
+    for the course Information Modelling And Web Technologies.
+  </p>
+  
+  <a href="https://github.com/la-saya10/Sugihara_Chiune" target="_blank" rel="noopener noreferrer" class="github-link">
+        <svg viewBox="0 0 16 16" width="32" height="32" fill="currentColor">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+            0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+            -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28
+            -.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08
+            -2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2
+            -.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75
+            -3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013
+            8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+    </a>
+</footer>
+
+
+<script src="../js/film_location.js"></script>  
+</body>
+</html>
