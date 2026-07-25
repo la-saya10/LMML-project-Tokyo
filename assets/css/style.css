@@ -345,6 +345,7 @@ body {
   
 }
 
+.item-description h4,
 .item-description h3 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 0;

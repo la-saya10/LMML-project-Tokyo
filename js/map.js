@@ -46,7 +46,13 @@ const locations = [
     lat: 35.659506823503065,
     lng: 139.70055855214449,
     desc: '有名なスクランブル交差点',
-    image: 'assets/img/scramble_crossing.jpeg'
+    image: 'assets/img/scramble_crossing.jpeg'  
+  },
+  { name: 'Rainbow Bridge',
+    lat: 35.63671039553146, 
+    lng: 139.76310889686366,
+    desc: '有名なスクランブル交差点',
+    image: 'assets/img/bridge.jpeg'   
   }
 ];
 
