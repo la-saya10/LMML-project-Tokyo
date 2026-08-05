@@ -34,7 +34,20 @@
   <div class="location-left">
     <div class="location-header">
       <h1>Salon de Thé ROND</h1>
-      <img id="location-img" src="../assets/img/cafe.jpeg">
+
+      <div class="image-carousel">
+        <button class="carousel-btn prev-btn" aria-label="Previous image">&#10094;</button>
+
+        <div class="carousel-track">
+          <img src="../assets/img/cafe.jpeg" class="carousel-img active" data-index="0">
+          <img src="../assets/img/cafe_2.jpg" class="carousel-img" data-index="1">
+          <img src="../assets/img/cafe_3.jpg" class="carousel-img" data-index="2">
+        </div>
+
+        <button class="carousel-btn next-btn" aria-label="Next image">&#10095;</button>
+      </div>
+
+      <div class="carousel-dots"></div>
     </div>
 
     <div class="location-details">
@@ -136,7 +149,50 @@
 
       </p>
 
-      <!-- 他の組み合わせ（standard×beginnerなど）も同様に必要な分だけ追加 -->
+<div class="metadata-table">
+  <table>
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>Item</th>
+      <th>Entity Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Chiune Sugihara</td>
+      <td>Person</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Japanese Foreign Ministry</td>
+      <td>Organization</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Sugihara: Conspiracy of Kindness</td>
+      <td>Documentary film</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Soviet occupation of the Baltic states</td>
+      <td>Event</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Kaunas</td>
+      <td>City</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Yad Vashem</td>
+      <td>Organization</td>
+    </tr>
+    
+  </tbody>
+  </table>
+</div>    
 
 
   </div>

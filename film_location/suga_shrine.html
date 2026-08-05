@@ -34,7 +34,21 @@
   <div class="location-left">
     <div class="location-header">
       <h1>Suga Shrine</h1>
-      <img id="location-img" src="../assets/img/kaidan.jpg">
+
+      <div class="image-carousel">
+        <button class="carousel-btn prev-btn" aria-label="Previous image">&#10094;</button>
+
+        <div class="carousel-track">
+          <img src="../assets/img/kaidan.jpg" class="carousel-img active" data-index="0">
+          <img src="../assets/img/kaidan_2.jpg" class="carousel-img" data-index="1">
+          <img src="../assets/img/kaidan_3.jpg" class="carousel-img" data-index="2">
+          <img src="../assets/img/kaidan_4.jpg" class="carousel-img" data-index="3">
+        </div>
+
+        <button class="carousel-btn next-btn" aria-label="Next image">&#10095;</button>
+      </div>
+
+      <div class="carousel-dots"></div>
     </div>
 
     <div class="location-details">
