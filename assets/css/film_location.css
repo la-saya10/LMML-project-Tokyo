@@ -75,11 +75,29 @@ body {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#location-img {
-  max-width: 100%;
+
+.image-carousel {
+  position: relative;
   width: 100%;
-  height: auto;
 }
+
+.carousel-track {
+  position: relative;
+  width: 100%;
+  /* 高さは指定しない → 中身（表示中の画像）に合わせて自動で決まる */
+}
+
+.carousel-img {
+  display: none;           /* 非表示のものはレイアウトから完全に外す */
+  width: 100%;              /* 横幅いっぱいまで拡大（大きい画像は縮小） */
+  height: auto;             /* 縦横比を保つ */
+  max-width: 100%;
+}
+
+.carousel-img.active {
+  display: block;           /* 表示中の画像だけをフローに置く → これがコンテナの高さになる */
+}
+
 
 .location-details {
   width: 100%;
@@ -327,7 +345,7 @@ body {
 
 .metadata-table tbody td {
   padding: 0.65rem 1rem;
-  border-bottom: 1px solid #eef1f4;
+  border-bottom: 1px solid  #2c3e50;
   vertical-align: top;
   color: #4a4a4a;
 }
