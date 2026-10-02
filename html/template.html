@@ -23,19 +23,48 @@
     </nav>
 
 
-  <div class="location-page">
-    <div class="location-left">
-      <h1 id="location-title"></h1>
-    </div>
 
-    <div class="location-right">
+
+
+
+
+
+
+<!-- ---------------------------------------
+               RIGHT SIDE
+--------------------------------------------- -->
+
+  <div class="location-right">
+
       <div class="scene">
         <h4>Scene</h4>
         <p id="location-scene"></p>
       </div>
-    </div>
-  </div>
 
+
+      <div class="set">
+        <h4>About the Location</h4>
+      </div>
+
+      
+      <div class="buttons">
+
+        <div class="length-buttons">
+          <span class="control-label">Length:</span>
+          <button class="length-btn active" data-length="brief">Brief</button>
+          <button class="length-btn" data-length="standard">Standard</button>
+          <button class="length-btn" data-length="indepth">In-depth</button>
+        </div>
+     
+        <!-- Knowledge level -->
+        <div class="control-buttons">
+          <span class="control-label">Level:</span>
+          <button class="level-btn active" data-level="beginner">Beginner</button>
+          <button class="level-btn" data-level="general">General</button>
+          <button class="level-btn" data-level="expert">Expert</button>
+        </div>
+
+      </div>
  
 
 
@@ -67,7 +96,7 @@
 
 
 
-  <script src="../js/locations_data.js"></script>
+  <script src="../js/location_data.js"></script>
   <script src="../js/template.js"></script>
 </body>
 </html>
