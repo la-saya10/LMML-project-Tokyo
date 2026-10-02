@@ -307,7 +307,9 @@ body {
 
 
 
-
+/** ══════════════════════════════════════════
+     MEATADATA TABLE
+══════════════════════════════════════════ **/
 
 .metadata-table {
   margin: 2rem 0;
@@ -355,7 +357,7 @@ body {
 }
 
 .metadata-table tbody tr:nth-child(even) {
-  background-color: #f7f9fb;
+  background-color: transparent
 }
 
 .metadata-table td:first-child,

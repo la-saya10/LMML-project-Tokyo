@@ -24,11 +24,11 @@ const locations = [
     desc: '有名なスクランブル交差点',
     image: 'assets/img/mori_tower.jpg'
   },
-  { name: 'Meiji Jingu Outer Garden',
-    lat: 35.675657757141444, 
-    lng: 139.71826679648882,
+  { name: 'Kabukicho Arch', 
+    lat: 35.69541212988438, 
+    lng: 139.70080231493728,
     desc: '有名なスクランブル交差点',
-    image: 'assets/img/meiji_jingu.jpg'  
+    image: 'assets/img/kabuki.jpg'  
   },
   { name: 'Kaminarimon Gate',
     lat: 35.711126817669914,
@@ -58,7 +58,25 @@ const locations = [
     lat: 35.71740627946332,
     lng: 139.8067093778155,
     desc: '',
-    image: 'assets/img/sakurabashi.jpg'  
+    image: 'assets/img/sakurabashi.jpg'    
+  },
+  { name: 'Yoyogi Fukamachi Mini Park',
+    lat: 35.66943894260785, 
+    lng: 139.69069912682474,
+    desc: '有名なスクランブル交差点',
+    image: 'assets/img/yoyogi_park.jpg'      
+  },
+  { name: 'Yunika Vision',
+    lat: 35.69398751376701,
+    lng: 139.70061736319636,
+    desc: '',
+    image: 'assets/img/yunika.jpg'    
+  },
+  { name: 'Yunika Vision',
+    lat: 35.69398751376701,
+    lng: 139.70061736319636,
+    desc: '',
+    image: 'assets/img/yunika.jpg'    
   }
 ];
 

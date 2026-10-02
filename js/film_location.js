@@ -1,3 +1,15 @@
+// ① ここを一番上に足す
+document.addEventListener("DOMContentLoaded", function () {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+  const item = locations[id];
+
+  if (item) {
+    document.getElementById("location-title").textContent = item.title;
+  }
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const lengthButtons = document.querySelectorAll(".length-btn");
   const levelButtons = document.querySelectorAll(".level-btn");
