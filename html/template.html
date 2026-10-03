@@ -13,9 +13,9 @@
 --------------------------------------------- -->
     <nav  class="d-flex align-items-center sticky-top navbar">
     <ul class="nav-links">
-        <li class="dropdown"><a href="/index.html">COVER</a></li>
-        <li class="dropdown"><a href="/map.html">MAP</a></li>
-        <li class="dropdown"><a href="../locations.html">LOCATIONS</a></li>
+        <li class="dropdown"><a href="index.html">COVER</a></li>
+        <li class="dropdown"><a href="map.html">MAP</a></li>
+        <li class="dropdown"><a href="locations.html">LOCATIONS</a></li>
         <li class="dropdown"><a href="">About</a></li>
         <li class="dropdown"><a href="">Documentation</a></li>
         <li class="dropdown"><a href="">Disclaimer</a></li>
@@ -25,6 +25,25 @@
 
 
 
+  
+<div class="location-page">
+<!-- ---------------------------------------
+               LEFT SIDE
+--------------------------------------------- -->
+  <div class="location-left">
+    <div class="location-header">
+      <h1 id="location-title"></h1>
+
+      <div class="image-carousel">
+        <button class="carousel-btn prev-btn" aria-label="Previous image">&#10094;</button>
+        <div class="carousel-track" id="carousel-track"></div>
+        <button class="carousel-btn next-btn" aria-label="Next image">&#10095;</button>
+      </div>
+
+      <div class="carousel-dots"></div>
+    </div>
+
+  </div>
 
 
 
@@ -46,26 +65,27 @@
         <h4>About the Location</h4>
       </div>
 
-      
-      <div class="buttons">
 
-        <div class="length-buttons">
-          <span class="control-label">Length:</span>
-          <button class="length-btn active" data-length="brief">Brief</button>
-          <button class="length-btn" data-length="standard">Standard</button>
-          <button class="length-btn" data-length="indepth">In-depth</button>
-        </div>
-     
-        <!-- Knowledge level -->
-        <div class="control-buttons">
-          <span class="control-label">Level:</span>
-          <button class="level-btn active" data-level="beginner">Beginner</button>
-          <button class="level-btn" data-level="general">General</button>
-          <button class="level-btn" data-level="expert">Expert</button>
-        </div>
+  <div class="buttons">
+    <div class="length-buttons">
+      <span class="control-label">Length:</span>
+      <button class="length-btn active" data-length="brief">Brief</button>
+      <button class="length-btn" data-length="standard">Standard</button>
+      <button class="length-btn" data-length="indepth">In-depth</button>
+    </div>
 
-      </div>
- 
+    <div class="control-buttons">
+      <span class="control-label">Level:</span>
+      <button class="level-btn active" data-level="beginner">Beginner</button>
+      <button class="level-btn" data-level="general">General</button>
+      <button class="level-btn" data-level="expert">Expert</button>
+    </div>
+  </div>
+
+  <p id="film-text"></p>
+  </div>
+
+</div> 
 
 
 <!-- ---------------------------------------
@@ -92,7 +112,6 @@
         </svg>
     </a>
 </footer>
-
 
 
 
