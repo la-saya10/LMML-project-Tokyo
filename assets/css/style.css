@@ -153,14 +153,26 @@ body {
 
 
 /** ══════════════════════════════════════════
-     MAP
+                  MAP
 ══════════════════════════════════════════ **/
 
+.map-title h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+
 .map-wrap {
-  position: relative;   /* ← #info-panelの基準点になる */
-  width: 100%;
-  height: calc(100vh - 60px);   /* ← 480pxから変更 */
-  overflow: hidden;   /* ← これを追加 */
+  width: 70%;                           /* 左右に、合計15%の余白 */
+  height: 65vh;    /* 画面の高さ − ナビバー − 上下の余白 */
+  margin: 4rem auto 2rem;                   
+  overflow: hidden;
+  border: 2px solid #2c3e50; 
+  border-radius: 8px;
 }
 
 #map {
@@ -169,29 +181,54 @@ body {
 }
 
 
-
-/*-------------------- PANEL--------------------------------*/
-#info-panel {
-    display: block;          
-    width: 30%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    background: #F5F4EF;
-    padding: 1rem;
-    box-sizing: border-box;
-    z-index: 1000;      /* ← これを追加 */
-
-    transform: translateX(100%);  /* 画面の右外に隠しておく */
-    transition: transform 0.3s ease;  /* transformが変わる時に0.3秒かけて滑らかに動く */
-  }
-
-  
-#info-panel.visible {
-  transform: translateX(0);     /* 元の位置(見える位置)に戻す */
+.leaflet-popup-content img {
+  display: block;
+  width: 100%;          /* 吹き出しの幅に合わせる */
+  height: 150px;        /* 高さを固定する */
+  object-fit: cover;    /* 写真を歪ませず、はみ出す部分は切り取る */
+  border-radius: 6px;
 }
 
+
+.location-button {            /* 入れ物:2つのボタンをどう並べるか */
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 40px;
+}
+
+
+.location-button .link-row a{
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  background: #2c3e50;       
+  color: #fff;
+  text-decoration: none;
+}
+
+.map-button {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.map-button .btn {
+  background: #2c3e50;
+  color: #fff;
+  border: 2px solid #2c3e50;
+  border-radius: 999px;       /* 丸いカプセル型 */
+  padding: 8px 24px;
+  font-weight: bold;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.map-button .btn:hover {
+  background: #fff;
+  color: #2c3e50;
+  border-color: #2c3e50;
+}
 
 #info-image {
   width: 100%;         /* 親(#info-panel)の幅いっぱいまで広がる、それ以上ははみ出ない */
@@ -243,14 +280,21 @@ body {
 
 
 
-.location-title h1{
+/** ══════════════════════════════════════════
+              LOCATIONS
+══════════════════════════════════════════ **/
+
+
+.location-title h1 {
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 90px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   color: #2c3e50;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
 }
+
+
 
 
 
@@ -291,12 +335,14 @@ body {
   margin: 0 auto;         /* 中央寄せ */
   padding: 0 1rem;        /* 画面端との余白 */
   margin-top: 10px;
+  
+  
 }
 
 /* 3列グリッド */
 .row.g-4 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
 }
 
@@ -309,19 +355,16 @@ body {
   display: flex;
   flex-direction: column;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  max-width: 300px;        /* カード自体の最大幅を制限 */
-  margin: 0 auto;          /* グリッドセル内で中央寄せ、余白が生まれる */
+  max-width: 330px;        /* カード自体の最大幅を制限 */
+  margin: 10px auto;          /* グリッドセル内で中央寄せ、余白が生まれる */
   padding-top: 12px;
 }
 
-.item-wrapper:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14);
-}
 
 /* 画像エリア：少し小さめの比率に */
 .img-box {
   width: 100%;
+  border-radius: 10px;
   aspect-ratio: 4 / 3;
   overflow: hidden;
 
@@ -365,8 +408,7 @@ body {
   text-decoration: none;
   color:#2c3e50;
   font-weight: 600;
-
-
+  border-radius: 10px;
 
   display: inline-flex;
   align-items: center;
@@ -375,10 +417,6 @@ body {
   border: 1px solid #2c3e50;
   transition: background 0.2s ease, border-color 0.2s ease;
 }
-
-
-
-
 
 
 

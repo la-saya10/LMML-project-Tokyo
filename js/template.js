@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const item = locations[id];
 
   if (!item) {
-    document.getElementById("location-title").textContent = "(該当データなし)";
+    document.getElementById("location-title").textContent = "No data found";
     return;  // データがなければ、ここで終わり
   }
 
