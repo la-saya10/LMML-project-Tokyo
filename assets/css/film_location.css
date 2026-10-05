@@ -79,6 +79,7 @@ body {
 .image-carousel {
   position: relative;
   width: 100%;
+  margin-top: 30px;
 }
 
 .carousel-track {
@@ -123,11 +124,18 @@ body {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+
+
 .set h4,
 .scene h4 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight:bold;
+}
 
+.metadata-set h4{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight:bold;
+  margin-top: 35px;
 }
 
 .scene {
@@ -175,19 +183,6 @@ body {
   width: 80%;
   margin-top: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -311,59 +306,39 @@ body {
      MEATADATA TABLE
 ══════════════════════════════════════════ **/
 
-.metadata-table {
-  margin: 2rem 0;
-  overflow-x: auto;
-  width: 90%;
+.entity-table {
+  max-width: 720px;
+  margin: 24px 0;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;                          /* 角丸からはみ出る部分を隠す */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.metadata-table table {
+.entity-table table {
   width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  font-size: 0.95rem;
-  font-family: inherit;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-  border: 1px solid #d7e0e8;
+  border-collapse: collapse;                 /* セルの境界線を1本にまとめる */
 }
 
-.metadata-table caption {
-  caption-side: top;
-  text-align: left;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.metadata-table thead th {
-  background-color: #2c3e50;
-  color: #ffffff;
-  text-align: left;
-  padding: 0.75rem 1rem;
-  font-weight: 600;
-  border-bottom: none;
-}
-
-.metadata-table tbody td {
-  padding: 0.65rem 1rem;
-  border-bottom: 1px solid  #2c3e50;
+.entity-table td {
+  padding: 12px 18px;
+  border-bottom: 1px solid #eee;
   vertical-align: top;
-  color: #4a4a4a;
+  line-height: 1.6;
 }
 
-.metadata-table tbody tr:last-child td {
+/* 左の列(項目名) */
+.entity-table td:first-child {
+  width: 25%;
+  background: #fffffe;
+  color: #2c3e50;
+  font-weight: bold;
+  white-space: nowrap;                       /* 項目名は折り返さない */
+}
+
+/* 最後の行は下線を消す */
+.entity-table tr:last-child td {
   border-bottom: none;
-}
-
-.metadata-table tbody tr:nth-child(even) {
-  background-color: transparent
-}
-
-.metadata-table td:first-child,
-.metadata-table th:first-child {
-  width: 3rem;
-  text-align: center;
 }
 
 

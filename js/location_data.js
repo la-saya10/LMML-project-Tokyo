@@ -1,29 +1,34 @@
 const locations = {
     "suga-shrine": {
         title: "Suga Shine",
-        scene: "The shine with the stairs where Taki and Mitsuha reunite in the final scene",
         images: ["kaidan.jpg", "kaidan_2.jpg", "kaidan_3.jpg", "kaidan_4.jpg"],
         texts: {
             brief:  {
-                    beginner:"", 
-                    general:"",
-                    export:""},
+                    beginner:"Suga Shrine is a small shrine in Shinjuku, Tokyo. It is famous for the staircase that appears at the end of Your Name., where Taki and Mitsuha meet again.", 
+                    general:"Suga Shrine is a Shinto shrine located in Sugacho, Shinjuku, Tokyo. The shrine is situated in a quiet residential area and is approached by a distinctive staircase leading up from the surrounding streets",
+                    expert:"Suga Shrine is a Shinto shrine located in Sugacho, Shinjuku, Tokyo. Its elevated position, entrance staircase, and compact shrine grounds reflect the characteristic spatial organisation of an urban Shinto shrine."},
             standard:{
-                    beginner:"", 
+                    beginner:"Suga Shrine is a Shinto shrine in the Sugacho area of Shinjuku, Tokyo. The shrine stands at the top of a long staircase, which has become a recognisable landmark for visitors. Although it is relatively small, the shrine attracts many visitors because of its connection with Your Name. The staircase is particularly well known as the setting of the film's final scene.", 
                     general:"",
-                    export:""},
+                    expert:""},
             indepth:{
                     beginner:"", 
                     general:"",
-                    export:""},
+                    expert:""},
 
+        },
+        metadata: {
+            film:"Your Name.",
+            year:"2016",
+            address: "5-6 Sugacho, Shinjuku",
+            scene: "Taki and Mitsuha reunite in the final scene in the staircase of the shrine",
+            angle: "From the top of the stairs, looking down at the steps"
         }
     },
 
 
     "rond-cafe": {
         title: "Salon de Thé Rond",
-        scene: "The café where Taki and Okudera went on a date.",
         images: ["cafe.jpeg", "cafe_2.jpg", "cafe_3.jpg"],
         texts: {
             brief:    { 
@@ -38,8 +43,17 @@ const locations = {
                     beginner: "Salon de Thé Rond is a café inside the National Art Center, Tokyo, a large art museum in the Roppongi area. The building itself was designed by a well-known Japanese architect, and its most striking feature is a pair of giant, upside-down cone-shaped structures inside the main hall. The café sits right on top of one of these cones, so diners are seated in a circle around a kitchen at the center.", 
                     general: "...", 
                     expert: "..." }
-            }
+        },
+        metadata: {
+            film:"Your Name.",
+            year:"2016",
+            address: "",
+            scene: "The café where Taki and Okudera went on a date",
+            angle: ""
+        }
     },
+
+
 
     "shibuya-crossing": {
         title: "Shibuya Scramble Crossing",
@@ -47,8 +61,8 @@ const locations = {
         images: ["shibuya_crossing.jpg", "shibuya_crossing_2.jpg"],
         texts: {
             brief:  {
-                    beginner:"", 
-                    general:"",
+                    beginner:"Shibuya Crossing in Tokyo is the busiest pedestrian intersection in the world.", 
+                    general:"Shibuya Crossing is recognized as the busiest pedestrian crossing in the world. An estimated 3,000 people cross the street from all directions at the same time during peak hours.",
                     export:""},
             standard:{
                     beginner:"", 
@@ -109,7 +123,7 @@ const locations = {
     "busta-shinjuku": {
         title: "Busta Shinjuku",
         scene: "",
-        images: ["busta.jpg", "busta_2.jpg"],
+        images: ["busta.jpg", "busta2.jpg"],
         texts: {
             brief:  {
                     beginner:"", 

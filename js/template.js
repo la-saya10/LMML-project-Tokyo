@@ -12,9 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.getElementById("page-title").textContent = item.title;
   document.getElementById("location-title").textContent = item.title;
-  document.getElementById("location-scene").textContent = item.scene;
- 
-
+  document.getElementById("metadeta-film").textContent = item.metadata.film;
+  document.getElementById("metadeta-address").textContent = item.metadata.address;
+  document.getElementById("metadata-scene").textContent = item.metadata.scene;
+  document.getElementById("metadata-angle").textContent = item.metadata.angle;
+  document.getElementById("metadata-year").textContent = item.metadata.year;
 
 
 

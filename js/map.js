@@ -7,17 +7,17 @@ L.tileLayer(
 
 const locations = [
   { name: 'Shibuya Scramble Crossing',
+    id: 'shibuya-crossing',
     lat: 35.659506823503065,
     lng: 139.70055855214449,
     image: '../assets/img/shibuya_crossing.jpg',
-    link: '',
     movie:'Weathering with You'  
   },  
   { name: 'Busta Shinjuku',
+    id: 'busta-shinjuku',
     lat: 35.68868333776064, 
     lng: 139.70073136765302,
     image: '../assets/img/busta.jpg',
-    link: '',
     movie:'Suzume'   
   },  
   { name: 'Yunika Vision',
@@ -111,7 +111,6 @@ const locations = [
     lat: 35.63671039553146, 
     lng: 139.76310889686366,
     image: '../assets/img/sample.jpg',
-    link: '',
     movie:'Weathering with You'  
   },
 ];
@@ -134,7 +133,7 @@ locations.forEach((loc, i) => {
       <img src="${loc.image}" alt="${loc.name}">
       <h3>${loc.name}</h3>
       <p>Film: ${loc.movie}</p>
-      <a class="lmml-popup-btn" href="${loc.link}">see more</a>
+      <a class="lmml-popup-btn" href="../template.html?id=${loc.id}">see more</a>
     </div>
   `;
 
