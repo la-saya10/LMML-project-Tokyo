@@ -1,18 +1,19 @@
 const locations = {
     "suga-shrine": {
         title: "Suga Shine",
-        images: ["kaidan.jpg", "kaidan_2.jpg", "kaidan_3.jpg", "kaidan_4.jpg"],
+        images: ["kaidan.jpg", "kaidan_2.jpg", "kaidan_3.jpg", "kaidan_3.2.jpg", "kaidan_4.jpg", "kaidan_5.jpg"],
+        qr_image:["../assets/img/qr_sugashrine.png"],
         texts: {
             brief:  {
                     beginner:"Suga Shrine is a small shrine in Shinjuku, Tokyo. It is famous for the staircase that appears at the end of Your Name., where Taki and Mitsuha meet again.", 
                     general:"Suga Shrine is a Shinto shrine located in Sugacho, Shinjuku, Tokyo. The shrine is situated in a quiet residential area and is approached by a distinctive staircase leading up from the surrounding streets",
                     expert:"Suga Shrine is a Shinto shrine located in Sugacho, Shinjuku, Tokyo. Its elevated position, entrance staircase, and compact shrine grounds reflect the characteristic spatial organisation of an urban Shinto shrine."},
             standard:{
-                    beginner:"Suga Shrine is a Shinto shrine in the Sugacho area of Shinjuku, Tokyo. The shrine stands at the top of a long staircase, which has become a recognisable landmark for visitors. Although it is relatively small, the shrine attracts many visitors because of its connection with Your Name. The staircase is particularly well known as the setting of the film's final scene.", 
-                    general:"",
-                    expert:""},
+                    beginner:"Suga Shrine sits in a calm corner of Shinjuku, Tokyo. This shrine has looked after the local community since the early Edo period (1600s–1800s). Its main god is Susanoo, a hero from Japanese myth who defeated an eight-headed serpent. The shrine also honors Ukanomitama, a god of good harvests and successful business.", 
+                    general:"Suga Shrine has served as the general guardian shrine of the eighteen towns of Yotsuya since the early Edo period. Its main deities are Susanoo-no-Mikoto, associated with protection from evil, disaster, and epidemics, and Ukanomitama-no-Mikoto, the Inari deity of harvests and commerce. The shrine is known for its Edo-period festival, the Tenno Festival, once counted among Edo's five major festivals.",
+                    expert:"Suga Shrine belongs to the Gion (Gozu Tenno–Susanoo) tradition and was historically called Yotsuya Tenno-sha or Goryosha. It began in 1634 as an Inari shrine, and in 1644 Susanoo-no-Mikoto was enshrined with Ukanomitama-no-Mikoto, producing the composite Inari Tenno Gosha. The Susanoo enshrinement followed a land grant to Magome Kanyu, a wealthy Nihonbashi Odenmacho landowner who had handled shogunal supply lines and horses during the Shimabara Rebellion."},
             indepth:{
-                    beginner:"", 
+                    beginner:"Suga Shrine is a small, peaceful Shinto shrine in the middle of Tokyo. Since the early Edo period it has been the 'guardian shrine' of the eighteen towns of Yotsuya, and local people have looked to it for protection for generations. Its main god is Susanoo, a hero of Japanese myth who slew an eight-headed serpent and is believed to protect people from misfortune, disaster, and illness. The second main god, Ukanomitama, is connected to good harvests and business success. Visitors pray for family safety, good health, and exam success, and the shrine is especially known for safe-childbirth prayers. Beside it is a steep staircase called Otoko-zaka, the model for the stairs in the last scene of the movie Your Name.", 
                     general:"",
                     expert:""},
 
@@ -47,8 +48,8 @@ const locations = {
         metadata: {
             film:"Your Name.",
             year:"2016",
-            address: "",
-            scene: "The café where Taki and Okudera went on a date",
+            address: "7-22-2 Roppongi, Minato",
+            scene: "Taki and Okudera go on a date in the cafe",
             angle: ""
         }
     },
@@ -73,12 +74,18 @@ const locations = {
                     general:"",
                     export:""},
 
+        },
+        metadata: {
+            film:"Weathering with You",
+            year:"2019",
+            address: "2-24-12 Shibuya, Shibuya",
+            scene: "Hina stands at the crossing, praying for a sunny day",
+            angle: "High-angle view looking down from the Shibuya Mark City"
         }
     },
 
-    "national-stadium": {
-        title: "Shibuya Crossing",
-        scene: "",
+    "mufg-stadium": {
+        title: "MUFG Stadium",
         images: [],
         texts: {
             brief:  {
@@ -94,13 +101,19 @@ const locations = {
                     general:"",
                     export:""},
 
-            }
+        },
+        metadata: {
+            film:"Weaithering with You",
+            year:"2019",
+            address: "",
+            scene: "",
+            angle: ""
+        }
     },
 
 
     "hachikan-shrine": {
         title: "Hachikan Shrine",
-        scene: "Hodaka and Natsumi conduct interviews on the street",
         images: ["hachikan.jpg", "hachikan_2.jpg"],
         texts: {
             brief:  {
@@ -116,7 +129,14 @@ const locations = {
                     general:"",
                     export:""},
 
-            }
+        },
+        metadata: {
+            film:"Weathering with You",
+            year:"2019",
+            address: "",
+            scene: "Hodaka and Natsumi conduct interviews on the street",
+            angle: ""
+        }
     },
 
 
@@ -138,12 +158,18 @@ const locations = {
                     general:"",
                     export:""},
 
-            }
+        },
+        metadata: {
+            film:"Suzume",
+            year:"2022",
+            address: "",
+            scene: "",
+            angle: ""
+        }
     },
 
     "hijiri-bridge": {
         title: "Hijiri Bridge",
-        scene: "",
         images: ["hijiri.jpg", "hijiri2.jpg", "hijiri3.jpg", "hijiri4.jpg", "hijiri5.jpg", "hijiri6.jpg", "hijiri7.jpg"],
         texts: {
             brief:  {
@@ -159,8 +185,41 @@ const locations = {
                     general:"",
                     export:""},
 
-            }
+        },
+        metadata: {
+            film:"Suzume",
+            year:"2022",
+            address: "",
+            scene: "",
+            angle: ""
+        }
     },
+    "ameyoko-street": {
+        title: "Ameyoko Shpping Street",
+        images: ["ameyoko.jpg", "ameyoko2.jpg"],
+        texts: {
+            brief:  {
+                    beginner:"", 
+                    general:"",
+                    export:""},
+            standard:{
+                    beginner:"", 
+                    general:"",
+                    export:""},
+            indepth:{
+                    beginner:"", 
+                    general:"",
+                    export:""},
+
+        },
+        metadata: {
+            film:"Weathering with You",
+            year:"2019",
+            address: "6-10-7 Ueno, Taito",
+            scene: "Natsumi rides her motorcycle through the streets with Hodaka riding on the back",
+            angle: ""
+        }
+   }
 
 
 

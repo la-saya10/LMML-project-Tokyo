@@ -20,6 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+  const qrImg = document.getElementById('qr');
+  qrImg.src = item.qr_img;
+
+
+
   // ---------- 2. 画像を作って、入れ物に入れる ----------
   const track = document.getElementById("carousel-track");
 
