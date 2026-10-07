@@ -49,7 +49,7 @@ const locations = {
             film:"Your Name.",
             year:"2016",
             address: "7-22-2 Roppongi, Minato",
-            scene: "Taki and Okudera go on a date in the cafe",
+            scene: "Taki and Miki go on a date in the cafe",
             angle: ""
         }
     },

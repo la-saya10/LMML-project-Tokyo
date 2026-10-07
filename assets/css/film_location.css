@@ -50,12 +50,15 @@ body {
 
 
 
+/* ① ページ全体：flex をやめて grid にし、高さの固定を削除 */
 .location-page {
-  display: flex;
-  align-items: flex-start;   /* 上揃え。右カラムを高さいっぱい伸ばしたい場合は stretch に */
-  gap: 40px;
+  position: relative;                 /* 右カラムの配置の基準にする */
+  display: grid;
+  grid-template-columns: 40% 1fr;     /* 左40%、右は残り全部 */
+  column-gap: 40px;
   padding: 2rem;
-  height: 100%;
+  box-sizing: border-box;                 /* padding を高さに含める */
+  min-height: calc(100vh - 124px);        /* 画面の高さ − (ナビ約50px + 下バー約67px) */
 }
 
 
@@ -63,15 +66,15 @@ body {
      LEFT SIDE
 ══════════════════════════════════════════ **/
 
-/* 左カラム：h1・画像・詳細を縦に並べる */
+/* ② 左カラム：中身の高さで自然に決まる */
 .location-left {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;   /* 左寄せ */
-  flex: 0 0 40%;              /* 左カラムの幅。お好みで調整 */
-  padding-right: 30px;                 /* 線と中身がくっつかないよう余白を追加 */
-  border-right: 1px solid #ccc; 
-  
+  align-items: flex-start;
+  padding-right: 30px;
+  padding-bottom: 3rem;               /* 縦線を下に伸ばす（数値で調整） */
+  border-right: 1px solid #ccc;
+  height: 480px;
 }
 
 .location-header {
@@ -123,13 +126,15 @@ body {
 /** ══════════════════════════════════════════
      RIGHT SIDE
 ══════════════════════════════════════════ **/
-
-/* 右カラム：映画の記述、縦幅いっぱいに使う */
+/* ③ 右カラム：左と同じ高さの枠の中でスクロール */
 .location-right {
-  flex: 1;                    /* 残りの幅すべてを使う */
-  align-self: stretch;        /* 左カラムと同じ高さまで伸びる */
+  position: absolute;                 /* 高さの計算から外れる */
+  grid-column: 2;                     /* 右の列に置く */
+  grid-row: 1;                        /* 1行目に置く */
+  inset: 0;                           /* その枠いっぱいに広げる */
+  overflow-y: auto;                   /* はみ出した分だけスクロール */
   padding-left: 10px;
-  
+  padding-right: 35px;
 }
 
 .location-right h2 {
@@ -356,28 +361,28 @@ body {
 
 
 /** ══════════════════════════════════════════
-     Footer
+     PAGE NAV BAR (Previous / Next)
 ══════════════════════════════════════════ **/
 
-
-footer {
-  margin-top: 60px;
+.page-nav {
   background-color: #2c3e50;
-  padding: 30px 40px 10px 40px;  
-  border-top: 1px solid #ddd;
-  text-align: center;
-  font-size: 0.85rem;
+  padding: 14px 40px;               /* footer(30px 40px 10px)より縦を狭く */
+  display: flex;
+  justify-content: space-between;   /* Previous を左端、Next を右端に */
+  align-items: center;
+}
+
+.page-nav-btn {
   color: #ffffff;
-  line-height: 2;
+  text-decoration: none;
+  padding: 8px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 6px;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
 }
 
-
-.github-link {
-    color: #f1f1f1; 
-    transition: color 0.2s ease, transform 0.2s ease;
-}
-
-.github-link:hover {
-    color: #f1f1f1;
-    transform: scale(1.1); 
+.page-nav-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
 }
