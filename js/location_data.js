@@ -2,7 +2,7 @@ const locations = {
     "suga-shrine": {
         title: "Suga Shine",
         images: ["kaidan.jpg", "kaidan_2.jpg", "kaidan_3.jpg", "kaidan_3.2.jpg", "kaidan_4.jpg", "kaidan_5.jpg"],
-        qr_image:["../assets/img/qr_sugashrine.png"],
+        qr_image:["../assets/img/QR_sugashrine.png"],
         texts: {
             brief:  {
                     beginner:"Suga Shrine is a small shrine in Shinjuku, Tokyo. It is famous for the staircase that appears at the end of Your Name., where Taki and Mitsuha meet again.", 
@@ -14,8 +14,8 @@ const locations = {
                     expert:"Suga Shrine belongs to the Gion (Gozu Tenno–Susanoo) tradition and was historically called Yotsuya Tenno-sha or Goryosha. It began in 1634 as an Inari shrine, and in 1644 Susanoo-no-Mikoto was enshrined with Ukanomitama-no-Mikoto, producing the composite Inari Tenno Gosha. The Susanoo enshrinement followed a land grant to Magome Kanyu, a wealthy Nihonbashi Odenmacho landowner who had handled shogunal supply lines and horses during the Shimabara Rebellion."},
             indepth:{
                     beginner:"Suga Shrine is a small, peaceful Shinto shrine in the middle of Tokyo. Since the early Edo period it has been the 'guardian shrine' of the eighteen towns of Yotsuya, and local people have looked to it for protection for generations. Its main god is Susanoo, a hero of Japanese myth who slew an eight-headed serpent and is believed to protect people from misfortune, disaster, and illness. The second main god, Ukanomitama, is connected to good harvests and business success. Visitors pray for family safety, good health, and exam success, and the shrine is especially known for safe-childbirth prayers. Beside it is a steep staircase called Otoko-zaka, the model for the stairs in the last scene of the movie Your Name.", 
-                    general:"",
-                    expert:""},
+                    general:"Suga Shrine in Shinjuku has been the guardian shrine of the eighteen towns of Yotsuya since the early Edo period. It began in 1634 as an Inari shrine, and Susanoo-no-Mikoto was enshrined alongside it in 1644. Its main deities protect against misfortune, disaster, and disease, and bring harvests and business prosperity. Blessings include family safety, good health, safe childbirth, and exam success. The quiet grounds hold a painting of the Thirty-Six Immortal Poets (1836), shown only on special occasions.",
+                    expert:"Suga Shrine belongs to the Gion-faith lineage of Gozu Tenno and Susanoo-no-Mikoto, and was called Yotsuya Tenno-sha until the Meiji period. Its name (suga) derives from Susanoo’s declaration, after slaying Yamata no Orochi, that his heart was refreshed (“suga-suga-shi”). It began in 1634 as an Inari shrine, and Susanoo-no-Mikoto was enshrined in 1644. The enshrinement is tied to Magome Kanyu, a Nihonbashi Odenmacho landowner granted land in Yotsuya for his service in the Shimabara Rebellion; the Odenmacho tutelary deity was relocated from Kanda Myojin. The shrine thus combines Susanoo (apotropaic, anti-epidemic) with Ukanomitama (agriculture and commerce)."},
 
         },
         metadata: {
@@ -24,7 +24,8 @@ const locations = {
             address: "5-6 Sugacho, Shinjuku",
             scene: "Taki and Mitsuha reunite in the final scene in the staircase of the shrine",
             angle: "From the top of the stairs, looking down at the steps"
-        }
+        },
+        fun_fact: ['The steep staircase leading to the shrine buildings is known as the “Otoko-zaka” (Men’s Slope), while the gentler staircase is called the “Onna-zaka” (Women’s Slope).']
     },
 
 
@@ -51,7 +52,8 @@ const locations = {
             address: "7-22-2 Roppongi, Minato",
             scene: "Taki and Miki go on a date in the cafe",
             angle: ""
-        }
+        },
+        fun_fact:['Some of the glasses and tableware used in the film, including blue Duralex glasses, are also still used at the actual café.']
     },
 
 
@@ -81,7 +83,8 @@ const locations = {
             address: "2-24-12 Shibuya, Shibuya",
             scene: "Hina stands at the crossing, praying for a sunny day",
             angle: "High-angle view looking down from the Shibuya Mark City"
-        }
+        },
+        fun_fact:['']
     },
 
     "mufg-stadium": {
@@ -108,7 +111,9 @@ const locations = {
             address: "",
             scene: "",
             angle: ""
-        }
+        },
+        fun_fact:['On the fifth floor, visitors can enjoy “Sora no Mori,” a 360-degree walkway offering panoramic views of the surrounding greenery and the Tokyo skyline. The walkway is open to visitors even on days when no events are taking place, making it a pleasant place to explore and enjoy the views.']
+
     },
 
 
@@ -197,6 +202,32 @@ const locations = {
     "ameyoko-street": {
         title: "Ameyoko Shpping Street",
         images: ["ameyoko.jpg", "ameyoko2.jpg"],
+        texts: {
+            brief:  {
+                    beginner:"", 
+                    general:"",
+                    export:""},
+            standard:{
+                    beginner:"", 
+                    general:"",
+                    export:""},
+            indepth:{
+                    beginner:"", 
+                    general:"",
+                    export:""},
+
+        },
+        metadata: {
+            film:"Weathering with You",
+            year:"2019",
+            address: "6-10-7 Ueno, Taito",
+            scene: "Natsumi rides her motorcycle through the streets with Hodaka riding on the back",
+            angle: ""
+        }
+   },
+   "meiji-memorial": {
+        title: "Meiji Memorial Picture Gallery",
+        images: ["", ""],
         texts: {
             brief:  {
                     beginner:"", 

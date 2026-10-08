@@ -17,11 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("metadata-scene").textContent = item.metadata.scene;
   document.getElementById("metadata-angle").textContent = item.metadata.angle;
   document.getElementById("metadata-year").textContent = item.metadata.year;
+  document.getElementById("fun_fact").textContent = item.fun_fact
 
 
 
   const qrImg = document.getElementById('qr');
-  qrImg.src = item.qr_img;
+  qrImg.src = item.qr_image;
 
 
 

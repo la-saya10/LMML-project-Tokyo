@@ -133,7 +133,7 @@ locations.forEach((loc, i) => {
       <img src="${loc.image}" alt="${loc.name}">
       <h3>${loc.name}</h3>
       <p>Film: ${loc.movie}</p>
-      <a class="lmml-popup-btn" href="../template.html?id=${loc.id}">see more</a>
+      <a class="lmml-popup-btn" href="template.html?id=${loc.id}">see more</a>
     </div>
   `;
 

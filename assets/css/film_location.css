@@ -72,9 +72,8 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding-right: 30px;
-  padding-bottom: 3rem;               /* 縦線を下に伸ばす（数値で調整） */
+  padding-bottom: 1rem;               /* 縦線を下に伸ばす（数値で調整） */
   border-right: 1px solid #ccc;
-  height: 480px;
 }
 
 .location-header {
@@ -83,6 +82,7 @@ body {
   align-items: flex-start;
   margin-bottom: 1rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  
 }
 
 
@@ -118,9 +118,9 @@ body {
   margin: 0 0 6px 0;
 }
 
-#qr_img {
-  width: 160px;
-  height: 160px;
+#qr {
+  width: 130px;
+  height: 130px;
 }
 
 /** ══════════════════════════════════════════
@@ -149,13 +149,18 @@ body {
   font-weight:bold;
 }
 
-.metadata-set h4{
+.metadata-set h4,
+.fun-fact-set h4 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight:bold;
   margin-top: 35px;
 }
 
 .scene {
+  margin-bottom: 40px;
+}
+
+.fun-fact-set {
   margin-bottom: 40px;
 }
 
