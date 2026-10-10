@@ -12,12 +12,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.getElementById("page-title").textContent = item.title;
   document.getElementById("location-title").textContent = item.title;
+  
   document.getElementById("metadeta-film").textContent = item.metadata.film;
   document.getElementById("metadeta-address").textContent = item.metadata.address;
   document.getElementById("metadata-scene").textContent = item.metadata.scene;
   document.getElementById("metadata-angle").textContent = item.metadata.angle;
   document.getElementById("metadata-year").textContent = item.metadata.year;
   document.getElementById("fun_fact").textContent = item.fun_fact
+
+  document.getElementById("nearest-station").textContent = item.near_station;
+  document.getElementById("best-time").textContent = item.best_time;
+  document.getElementById("admission").textContent = item.admission;
 
 
 

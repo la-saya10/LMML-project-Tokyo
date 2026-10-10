@@ -61,6 +61,23 @@ body {
   min-height: calc(100vh - 124px);        /* 画面の高さ − (ナビ約50px + 下バー約67px) */
 }
 
+.qr-block {
+  display: flex;          /* QRとテキストを横に並べる */
+  gap: 19px;              /* QRとテキストの間隔 */
+  align-items: flex-start;/* 上端をそろえる */
+}
+.qr-img { width: 130px; height: 130px; }
+.qr-caption {
+  font-size: 13px;
+  color: #666;
+  margin: 0 0 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ddd;  /* 区切り線 */
+}
+
+
+.qr-text h4 { font-size: 14px; margin: 0 0 4px; }
+.qr-text ul { font-size: 14px; margin: 0; padding-left: 18px; }
 
 /** ══════════════════════════════════════════
      LEFT SIDE
@@ -71,7 +88,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-right: 30px;
+  padding: 0 20px;
   padding-bottom: 1rem;               /* 縦線を下に伸ばす（数値で調整） */
   border-right: 1px solid #ccc;
 }
@@ -90,7 +107,10 @@ body {
   position: relative;
   width: 100%;
   margin-top: 30px;
+  padding-bottom: 9px;
+  
 }
+
 
 .carousel-track {
   position: relative;
@@ -103,6 +123,9 @@ body {
   width: 100%;              /* 横幅いっぱいまで拡大（大きい画像は縮小） */
   height: auto;             /* 縦横比を保つ */
   max-width: 100%;
+  border: 6px solid #1a1a1a;     /* 黒い額縁 */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  
 }
 
 .carousel-img.active {
