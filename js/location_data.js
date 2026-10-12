@@ -156,9 +156,9 @@ const locations = {
         metadata: {
             film:"Weaithering with You",
             year:"2019",
-            address: "",
-            scene: "",
-            angle: ""
+            address: "10-1 Kasumigaokamachi, Shinjuku",
+            scene: "Hodaka follows Natsumi around as she conducts interviews",
+            angle: "Facing straight toward the SOUTH GATE sign"
         },
         fun_fact:['On the fifth floor, visitors can enjoy “Sora no Mori,” a 360-degree walkway offering panoramic views of the surrounding greenery and the Tokyo skyline. The walkway is open to visitors even on days when no events are taking place, making it a pleasant place to explore and enjoy the views.']
 
@@ -232,28 +232,33 @@ const locations = {
     "hachikan-shrine": {
         title: "Hachikan Shrine",
         images: ["hachikan.jpg", "hachikan_2.jpg"],
+        qr_image:["../assets/img/QR_hachikan.png"],
+        near_station: ["About 7-minute walk from Ginza Station"],
+        best_time: ["When the sky is dark with rain clouds"],
+        admission: ["Free to visit"],
         texts: {
-            brief:  {
-                    beginner:"", 
-                    general:"",
-                    expert:""},
+                brief:  {
+                    beginner:"Hachikan Shrine is a tiny shrine tucked into the first floor of a building full of restaurants in Ginza, Tokyo, where a small shrine house sits behind glass beyond a torii gate that stands a little above the street.", 
+                    general:"Hachikan Shrine, an Inari shrine in Ginza 8-chome, was founded in the Genroku era (1688–1704) and drew its present name from the old neighborhood of Hachikan-cho, having earlier been known as Kokuho Inari Shrine.",
+                    expert:"According to one account, the shrine originally stood in Akashi District, Harima Province, in present-day Hyogo Prefecture, and was relocated to its present site during the Genroku era (1688–1704)."},
             standard:{
-                    beginner:"", 
-                    general:"",
-                    expert:""},
+                    beginner:"Inari is the main god of the shrine, and women in beautiful kimono with carefully styled hair often come to pray, because this neighborhood was once home to many geisha (performing artist), and many other visitors come hoping for good luck in the lottery.", 
+                    general:"An Edo-period map from 1853 shows Kokuho Inari standing in Hachikan-cho on almost the same spot as today, and the shrine also enshrines Kaga-hime Inari, a goddess said to have been brought here by Tanaka Heishiro, a village head whose family had long worshipped her, which would explain why women from the neighborhood’s geisha community came to pray to her.",
+                    expert:"Known as Kokuho Inari Shrine until 1924, it took the name Hachikan Shrine from the then place name Hachikan-cho, and although it has since shrunk to the scale of a hokora, it was once ranked as a village shrine (sonsha) under the modern shrine ranking system and had the precinct of a small shrine."},
             indepth:{
-                    beginner:"", 
-                    general:"",
-                    expert:""},
+                    beginner:"Long ago the shrine faced the wide street called Sotobori-dori, sitting inside the open two-story space of a narrow building so that people could pray to it right from the sidewalk, but when the building was sold to a new owner, the shrine was moved to a quiet spot at the back, and the space that faced the street became a rental shop, which was the case until around the middle of the Heisei era (1989-2019).", 
+                    general:"When the building changed hands, the shrine’s resident priest, whose office was on the eighth floor, left, and the deity was transferred to Shiba Daijingu, which holds a festival for Hime Inari each June and, as Shinmeigu in the Edo period, drew crowds by selling lottery tickets, so visitors still come to the small branch shrine at Hachikan hoping for luck in the lottery.",
+                    expert:"One local study treats the name Hachikan as a personal name rather than a government post, arguing that land was granted to someone of that name in the early Edo period, much as Anjin-cho and Yaesu preserve the names of William Adams and Jan Joosten, and it suggests that Kaga-hime Inari came from Kaga Province, since neighboring Kaga-cho was built by workers from there, although this remains a hypothesis."},
 
         },
         metadata: {
             film:"Weathering with You",
             year:"2019",
-            address: "",
+            address: "8-4-5 Ginza, Chuo",
             scene: "Hodaka and Natsumi conduct interviews on the street",
-            angle: ""
-        }
+            angle: "Facing straight toward the shrine"
+        },
+        fun_fact: ['Following the land readjustment after the Great Kanto Earthquake, the historical neighborhood name "Hachikan-cho" was set to disappear. Regretting the loss of the name, local residents renamed the shrine to "Hachikan Shrine," preserving the historic place name to this day.']
     },
 
     "rainbow-bridge": {
@@ -376,11 +381,43 @@ const locations = {
         }
    },
 
+   "yunika-vision": {
+        title: "Yunika Vision",
+        images: ["yunika.jpg", "yunika_1.jpg", "yunika3.jpg"],
+        qr_image:["../assets/img/QR_kaminarimon.png"],
+        near_station: ["About 3-minute walk from JR Shinjuku Station"],
+        best_time: [""],
+        admission: ["Free to visit"],
+        texts: {
+                brief:  {
+                    beginner:"", 
+                    general:"",
+                    expert:""},
+            standard:{
+                    beginner:"", 
+                    general:"",
+                    expert:""},
+            indepth:{
+                    beginner:"", 
+                    general:"",
+                    expert:""},
+
+        },
+        metadata: {
+            film:"Your Name.",
+            year:"2016",
+            address: "3-23-7 Shinjuku, Shinjuku",
+            scene: "",
+            angle: ""
+        },
+        fun_fact: ['']
+    },
+
 
    "template": {
         title: "",
         images: [""],
-        qr_image:["../assets/img/QR_kaminarimon.png"],
+        qr_image:["../assets/img/QR_yunika.png"],
         near_station: [""],
         best_time: [""],
         admission: [""],
@@ -400,8 +437,8 @@ const locations = {
 
         },
         metadata: {
-            film:"Suzume",
-            year:"2022",
+            film:"",
+            year:"20",
             address: "",
             scene: "",
             angle: ""
@@ -414,7 +451,11 @@ const locations = {
 
    "meiji-memorial": {
         title: "Meiji Memorial Picture Gallery",
-        images: ["", ""],
+        images: ["meiji_jingu.jpg", "meiji3.jpg"],
+        qr_image:["../assets/img/QR_meiji.png"],
+        near_station: [" minute walk from  Station"],
+        best_time: ["As the sky begins to turn orange in the evening"],
+        admission: [""],
         texts: {
             brief:  {
                     beginner:"", 
@@ -431,10 +472,10 @@ const locations = {
 
         },
         metadata: {
-            film:"Weathering with You",
-            year:"2019",
-            address: "6-10-7 Ueno, Taito",
-            scene: "Natsumi rides her motorcycle through the streets with Hodaka riding on the back",
+            film:"Your Name.",
+            year:"2016",
+            address: "1-1 Kasumigaoka-machi, Shinjuku",
+            scene: "Taki and his classmates pass by Meiji Jingu Gaien after school",
             angle: ""
         }
    }
