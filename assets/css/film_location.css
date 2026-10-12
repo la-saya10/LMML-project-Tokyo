@@ -61,6 +61,11 @@ body {
   min-height: calc(100vh - 124px);        /* 画面の高さ − (ナビ約50px + 下バー約67px) */
 }
 
+
+/** ══════════════════════════════════════════
+     LEFT SIDE
+══════════════════════════════════════════ **/
+
 .qr-block {
   display: flex;          /* QRとテキストを横に並べる */
   gap: 19px;              /* QRとテキストの間隔 */
@@ -79,9 +84,6 @@ body {
 .qr-text h4 { font-size: 14px; margin: 0 0 4px; }
 .qr-text ul { font-size: 14px; margin: 0; padding-left: 18px; }
 
-/** ══════════════════════════════════════════
-     LEFT SIDE
-══════════════════════════════════════════ **/
 
 /* ② 左カラム：中身の高さで自然に決まる */
 .location-left {
@@ -170,13 +172,19 @@ body {
 .scene h4 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight:bold;
+  border-bottom: 2px solid #ddd;  /* 区切り線 */
+  padding-bottom: 8px;
+
+
 }
 
 .metadata-set h4,
 .fun-fact-set h4 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight:bold;
-  margin-top: 35px;
+  margin-top: 38px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #ddd;  /* 区切り線 */
 }
 
 .scene {
