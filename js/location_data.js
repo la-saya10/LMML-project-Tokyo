@@ -269,25 +269,25 @@ const locations = {
         best_time: [""],
         admission: [""],
         texts: {
-                brief:  {
-                    beginner:"", 
-                    general:"",
-                    expert:""},
+            brief:  {
+                    beginner:"Rainbow Bridge is a big bridge in Tokyo that connects the Shibaura area with the Odaiba area, and its name means “bridge of a rainbow,” a name the public chose in a naming contest, while its official name is the Tokyo Port Connecting Bridge.", 
+                    general:"Construction of Rainbow Bridge began in 1987, and the suspension bridge, about 800 meters long, was completed in 1993 and opened on August 26 of that year, linking the Shibaura district of Minato Ward with the Daiba area, which includes parts of Minato and Koto wards.",
+                    expert:"The suspension section has a width of 29 meters, a center span of 570 meters, and towers 126 meters high, but the towers are rigid-frame (rahmen) structures rather than the truss type common on long suspension bridges."},
             standard:{
-                    beginner:"", 
-                    general:"",
-                    expert:""},
+                    beginner:"The bridge has two levels, and the lower level lets people walk across for free along walkways on both sides, while the Yurikamome train runs through the middle, so visitors can enjoy views of the sea and the city buildings by day and the lights at night, which also makes the road above a favorite spot for weekend drives.", 
+                    general:"The bridge was built to divert traffic heading into central Tokyo from Chiba and Kanagawa, easing chronic congestion at the Hakozaki and Edobashi junctions and on the Haneda Line of the Shuto Expressway, while also linking the Tokyo Waterfront Subcenter, then under development, with the existing city center, and signs at nearby junctions such as Ariake still highlight the direction of the bridge.",
+                    expert:"Crossing the shipping channel demanded a center span of at least 570 meters and a clearance of at least 50 meters, yet Haneda Airport’s restriction surface capped the structure at T.P. +150 meters and the low reclaimed banks limited road and transit gradients, so the designers chose a suspension bridge flanked by continuous viaduct approaches over one kilometer long, with a loop on the Shibaura side and steel pipe sheet pile foundations driven into roughly ten meters of water on the Daiba side."},
             indepth:{
-                    beginner:"", 
-                    general:"",
-                    expert:""},
+                    beginner:"When the bridge was designed, it was built tall enough for the luxury ship Queen Elizabeth 2 to sail under it and dock at Harumi, which is why the bottom of the bridge is 52 meters above the water, but the ship never actually passed beneath it after the bridge was finished, and since then cruise ships have grown so tall, reaching 60 to 70 meters, that the biggest ones cannot fit under the bridge, so a new terminal for large cruise ships opened in 2020 south of the bridge.", 
+                    general:"The upper deck carries the toll-paying Shuto Expressway Daiba Line, which has a Daiba exit on the Daiba-side approach, while the lower deck is a free general road with walkways on both outer sides, and although it costs nothing, its view is poorer than the upper deck’s because the Yurikamome tracks block the right-hand side and girders and fences limit the left, and the Odaiba Rainbow Bus uses this level without stopping on the bridge, while cyclists must push their bikes across on rental carts.",
+                    expert:"The tower foundations and the Daiba-side anchorage were built at sea by the pneumatic caisson method, and the structure is a combined rail-and-road bridge with two tiers, like the Seto Ohashi and the Yokohama Bay Bridge, while the integrated construction measures 1,465 meters for the Shibaura approach, 918 meters for the suspension section, and 1,367 meters for the Daiba approach, although the name usually refers only to the 798-meter suspension body between piers P22 and P25, excluding the two 60-meter anchorages."},
 
         },
         metadata: {
             film:"Weathering with You",
             year:"2019",
-            address: "",
-            scene: "",
+            address: "3-30, Kaigan, Minato",
+            scene: "Hodaka takes a ferry to Tokyo, and with barely any money left",
             angle: ""
         },
         fun_fact: ['']
