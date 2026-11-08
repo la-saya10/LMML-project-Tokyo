@@ -290,7 +290,7 @@ const locations = {
             scene: "Hodaka takes a ferry to Tokyo, and with barely any money left",
             angle: ""
         },
-        fun_fact: ['']
+        fun_fact: ['When Rainbow Bridge opened in 1993, its cable lighting, which shifts between white, green, and pink, was the first of its kind on any bridge in the world.']
     },
 
 
@@ -354,22 +354,23 @@ const locations = {
     "ameyoko-street": {
         title: "Ameyoko Shpping Street",
         images: ["ameyoko.jpg", "ameyoko2.jpg"],
-        near_station: ["3 minutes’ walk from Shinjuku Station"],
-        best_time: ["After dark, when the lights are on"],
+        qr_image:["../assets/img/QR_ameyoko.png"],
+        near_station: ["2 minute-walk from JR Ueno Statio"],
+        best_time: ["When it rains"],
         admission: ["Free to visit"],
         texts: {
             brief:  {
-                    beginner:"", 
-                    general:"",
-                    expert:""},
+                    beginner:"Ameyoko is a lively shopping street in Tokyo between Ueno and Okachimachi stations, where more than 400 small shops sell food, clothes, and cosmetics, and the sellers call out to passersby so you can chat with them and hunt for bargains.", 
+                    general:"Ameyoko Shopping Street runs about 500 meters along the elevated railway between Ueno and Okachimachi stations, partly beneath the tracks, with more than 400 shops selling seafood, imported goods, apparel, and cosmetics, and its year-end bargain sales have become a seasonal tradition.",
+                    expert:"Ameyoko grew out of the black markets of postwar Ueno and has come to symbolize the district’s reconstruction after the firebombing of the Second World War, which had destroyed the city’s commercial system."},
             standard:{
-                    beginner:"", 
-                    general:"",
-                    expert:""},
+                    beginner:"The name Ameyoko is said to come from two old nicknames, Ameya Yokocho, meaning candy sellers’ alley, from the stalls near Ueno Station that sold sweet potato candy and ice candy to travelers when sugar was scarce after the war, and Americayokocho, meaning America Alley, from the shops near Okachimachi Station that sold goods from American soldiers, and when the two areas merged, people shortened the name to Ameyoko.", 
+                    general:"After the war, rationing, a shortage of jobs, and economic controls under the Allied occupation gave rise to black markets, usually near busy railway stations, where vendors sold goods ranging from rice and vegetables to military-issue sunglasses and leather jackets obtained from occupation stocks, and the market just south of Ueno Station, the gateway to northern Japan, grew out of this same wave of improvised trade.",
+                    expert:"The Korean War of 1950 sharply increased demand for military supplies, revived the Japanese economy, and brought a new flow of American goods, some of which were released onto the streets of Tokyo as contraband, and shops specializing in such goods opened near Okachimachi Station, south of the Ueno market, where the area became known as Americayokocho, or America Alley, before these shops merged with the nearby candy sellers and the two Ameyokos became one."},
             indepth:{
-                    beginner:"", 
-                    general:"",
-                    expert:""},
+                    beginner:"Near Okachimachi Station, shops opened that sold things from American soldiers, such as Hershey chocolate, Zippo lighters, Ray-Ban sunglasses, blue jeans, soap, and razors, and because of them the area was called America Alley, but the street later changed with the times, first selling canned food, then fresh fish and unusual items, so today you can find seafood, fruit, cosmetics, and chocolate all in one place.", 
+                    general:"Because the occupation authorities restricted sugar, people craving sweets turned to substitutes such as sweet potato candy and ice candy, and traders from the Tohoku region, who brought their goods to Ueno by train and spent their earnings on as much candy as they could carry, sold it back home at three to four times the price, which explains how a few stalls multiplied into hundreds and how the market earned its nickname.",
+                    expert:"Whereas many black markets were controlled by tekiya, or itinerant stall operators, Ameyoko was managed from the start by repatriated soldiers who had been stationed on the Asian continent, and who formed a local trade association in 1949 to regulate the stalls, and in the decades since, its merchants have adapted to shifting tastes by moving from candy to canned goods, then to fresh fish and curiosities, leaving a patchwork of shops that reflects the street’s long role as a supplier of whatever Tokyoites needed."},
 
         },
         metadata: {
@@ -377,40 +378,74 @@ const locations = {
             year:"2019",
             address: "6-10-7 Ueno, Taito",
             scene: "Natsumi rides her motorcycle through the streets with Hodaka riding on the back",
-            angle: ""
-        }
+            angle: "Facing the drugstores next to Ameyoko sign",
+        },
+        fun_fact: ["At Ameyoko’s fresh fish and dried goods shops, haggling is part of the culture, and buying in bulk often earns you a discount, while at year’s end fresh fish can drop to less than half price, though bargaining is not the norm at restaurants or chain stores."]
    },
 
    "yunika-vision": {
         title: "Yunika Vision",
         images: ["yunika.jpg", "yunika_1.jpg", "yunika3.jpg"],
-        qr_image:["../assets/img/QR_kaminarimon.png"],
+        qr_image:["../assets/img/QR_yunika.png"],
         near_station: ["About 3-minute walk from JR Shinjuku Station"],
-        best_time: [""],
+        best_time: ["During the daytime"],
         admission: ["Free to visit"],
         texts: {
                 brief:  {
-                    beginner:"", 
-                    general:"",
-                    expert:""},
+                    beginner:"Yunika Vision is a giant video screen on the wall of the Yunika Building in Shinjuku, Tokyo, on the way from Shinjuku Station’s East Exit to Seibu-Shinjuku Station, and it shows ads, music, movies, anime, and games to the people walking by.", 
+                    general:"Yunika Vision, a large digital signage display of about 300 square meters, began broadcasting in 2010 when the Yunika Building was completed near the Shinjuku Ogado area, and it has since become one of Shinjuku’s leading large street screens.",
+                    expert:"Yunika Vision was conceived not primarily as an advertising medium but as an urban medium meant to raise the value of its owner’s real estate and of the surrounding district, with advertising sales positioned as a later stage."},
             standard:{
-                    beginner:"", 
-                    general:"",
-                    expert:""},
+                    beginner:"One of the screen’s best-known programs is Music Info, a music show that has run for nearly 14 years and has shown live performance videos of about 300 artists, edited by the screen’s own team, so people walking through Shinjuku can stop by chance and enjoy a concert on the street, which is why the screen is known not only for ads but also as a place to enjoy music in the city.", 
+                    general:"The screen sits along the route linking the Shinjuku East Exit area with Seibu-Shinjuku Station, in one of Japan’s leading urban spaces where business, commerce, tourism, and entertainment mix, so it is seen every day by commuters and students, shoppers and diners, visitors heading to concerts and events, and tourists from abroad, which makes it a point of contact for information in the city.",
+                    expert:"The area around the Shinjuku Ogado was not regarded as a favorable environment when the building went up, with recognized concerns about the district’s image and public safety, so the screen was installed to change the character of its surroundings, following a deliberate sequence of raising the building’s value, gaining acceptance in the neighborhood, and only then developing the screen as an advertising platform."},
             indepth:{
-                    beginner:"", 
-                    general:"",
-                    expert:""},
+                    beginner:"Besides ads, the screen has hosted special screenings, such as one for the band MAN WITH A MISSION in 2018 and a live-event screening in 2019, and it airs a wide range of content including movies, anime, games, fashion, and travel, so passersby may come across a favorite character or band on the wall and stop to watch, take photos, or share videos, which is part of the fun of this lively corner of Shinjuku.", 
+                    general:"Since broadcasting began, the screen has evolved with the times, adding more advanced video effects, sound-based presentations, links to social media, and topical content, and while its original value lay in being seen by many people, the value now also includes being remembered, being shared through photos and videos, and remaining as a memory of the city, so outdoor screens are treated as real media that people encounter in person rather than as simple outdoor ads.",
+                    expert:"For Music Info, the operator negotiates individually with record labels and artist agencies to obtain permission to use and edit each piece of footage, then broadcasts the original edit with coordinated publicity on both sides, which promotes the artists while raising awareness of the screen and the Yunika Building, and the same approach of building trust in the neighborhood through original programming underlies other urban media run by the operator, namely Cross Shinjuku Vision, Shibuya Pandora Vision, Shibuhara Vision, and Ikebukuro MED Vision."},
 
         },
         metadata: {
             film:"Your Name.",
             year:"2016",
             address: "3-23-7 Shinjuku, Shinjuku",
-            scene: "",
-            angle: ""
+            scene: "When Mitsuha first wakes up in Taki’s body, she steps outside, amazed by Tokyo, and one shot of the cityscape features the Yunika Vision building in Shinjuku.",
+            angle: "From the sidewalk at the Shinjuku Ogado Higashi intersection or the surrounding area, looking up at Yunika Vision"
         },
-        fun_fact: ['']
+        fun_fact: ['After broadcasting emergency information during the Great East Japan Earthquake in 2011, Yunika Vision came to recognize the social role of street screens, and it now has an agreement with Shinjuku Ward to provide evacuation information in Japanese, English, Chinese, and Korean in the event of a major disaster.']
+    },
+
+
+    "tokyo-station": {
+        title: "Tokyo Station",
+        images: [""],
+        qr_image:["../assets/img/QR_tokyostation.png"],
+        near_station: ["Inside Tokyo Station"],
+        best_time: ["Anytime"],
+        admission: ["Free to visit (a fee for getting to a platform)"],
+        texts: {
+                brief:  {
+                    beginner:"Tokyo Station is a giant train station in Tokyo with a beautiful red brick building that opened in 1914, and it has more platforms than any other station in Japan, so many Shinkansen (bullet trains) and regular trains start their trips here.", 
+                    general:"Served by JR East, JR Central, and the Tokyo Metro Marunouchi Line, Tokyo Station handles about 1.26 million passengers a day (2024), making it the sixth busiest in Japan, and it sits at the center of the country’s largest business district, with underground passages leading directly to the surrounding office buildings.",
+                    expert:"Opened on December 20, 1914 as Tokyo’s central station, facing the Imperial Palace, the Marunouchi building, designed by Tatsuno Kingo and Kasai Manji, was designated an Important Cultural Property in 2003, and it shares that status with only one other station building, Moji Port Station in Kitakyushu."},
+            standard:{
+                    beginner:"Tokyo Station is where the Tokaido and Tohoku Shinkansen begin, and from there other bullet train lines continue to northern and western Japan, so one can travel without changing trains to 34 prefectures out of 47, with about 3,000 trains arriving and leaving each day, although Shinjuku Station has even more passengers, because most people at Tokyo Station are changing between JR lines.", 
+                    general:"With 9 conventional platforms serving 18 tracks, 5 Shinkansen platforms serving 10 tracks, and 1 subway platform serving 2 tracks, all covering about 46,800 square meters, Tokyo Station has the most platforms of any station in Japan, and unlike many European central stations, where tracks end at buffers, it is a through-type station where many lines run straight through from north to south.",
+                    expert:"On paper, the JR conventional lines here are the Tokaido, Tohoku, Sobu, and Keiyo lines, each with a zero-kilometer post, yet the stretch of the Chuo Main Line between Tokyo and Kanda is officially part of the Tohoku Main Line to avoid counting distance twice, and JR treats Tokyo as its “central station,” the reference point for up and down directions and for calculating long-distance fares."},
+            indepth:{
+                    beginner:"The red brick building facing the Imperial Palace is 330 meters long and three stories tall, with domed roofs at the north and south ends that were once used as the boarding and exit gates, while the small, richly decorated middle entrance was reserved for the imperial family, and two extra doors between the middle and the side entrances were made for carrying luggage in and out, and the bricks were carried by train from Fukaya in Saitama Prefecture, with the grand opening held in December 1914, the same year the First World War began.", 
+                    general:"On May 25, 1945, firebombing destroyed the steel roof and most of the interior of the Marunouchi building, which was repaired by 1947 as a two-story structure with trapezoid domes, and only after a plan to replace it with a 24-story tower was abandoned was it restored to its original appearance between 2007 and 2012, with the 50 billion yen cost covered by selling the station’s unused development rights to nearby high-rises, while on the Yaesu side a modern station building completed in 1948 burned down the following year, and the Tetsudo Kaikan building, which housed the Daimaru department store, opened in 1954.",
+                    expert:"The station grew out of a plan for an elevated railway between Shimbashi and Ueno, approved by the Diet in 1896 and built by Obayashi, with construction in earnest from 1908 after the Russo-Japanese War, and the German engineer Franz Baltzer decided its location and layout, placing the building on a former army parade ground facing the Palace with four brick elevated platforms serving eight tracks, while his Japanese-style design was rejected in favor of Tatsuno’s Renaissance style, and although the theory that Amsterdam Central Station was the model has been questioned since 1988 by researchers such as Fujimori Terunobu, Tatsuno’s study in Britain may point to London’s terminals instead."},
+
+        },
+        metadata: {
+            film:"Suzume",
+            year:"2022",
+            address: "9-1 Marunouchi, Chiyoda",
+            scene: "Suzume and Souta arrive in Tokyo by Shinkansen. After getting off the train, Souta tells Suzume to transfer to another train to get to his house.",
+            angle: "From the right side of the escalator next to the Chuo Line platforms 1 and 2 sign"
+        },
+        fun_fact: ['Tokyo Station saw two prime ministers attacked: Takashi Hara was stabbed to death near the Marunouchi South Gate in 1921, and Osachi Hamaguchi was shot on a platform in 1930 and died the following year, and plaques mark both spots today.']
     },
 
 
@@ -453,32 +488,33 @@ const locations = {
         title: "Meiji Memorial Picture Gallery",
         images: ["meiji_jingu.jpg", "meiji3.jpg"],
         qr_image:["../assets/img/QR_meiji.png"],
-        near_station: [" minute walk from  Station"],
+        near_station: ["3 minute walk from JR Shinanomachi Station"],
         best_time: ["As the sky begins to turn orange in the evening"],
-        admission: [""],
+        admission: ["500 yen"],
         texts: {
             brief:  {
-                    beginner:"", 
-                    general:"",
-                    expert:""},
+                    beginner:"The Meiji Memorial Picture Gallery is a museum in Tokyo’s Meiji Jingu Gaien park that holds 80 large paintings showing the life of Emperor Meiji, and the ginkgo trees on the path leading up to it turn golden every autumn.", 
+                    general:"Standing at the heart of Meiji Jingu Gaien in Shinjuku, the Meiji Memorial Picture Gallery displays murals depicting the life of Emperor Meiji, interwoven with the achievements of Empress Shoken, and it is closed for conservation work from April 2025 until the end of May 2027 (scheduled).",
+                    expert:"Completed in 1926, the Meiji Memorial Picture Gallery was designated an Important Cultural Property in 2011 and praised as an early Japanese museum building that combined linear design with pioneering technology."},
             standard:{
-                    beginner:"", 
-                    general:"",
-                    expert:""},
+                    beginner:"The ginkgo avenue leading to the gallery has 146 trees planted in 1923, and the trees get shorter toward the building, a perspective trick that makes the gallery look farther away than it really is, while in autumn the golden leaves attract many visitors, and the avenue has also appeared as a filming location in many films and TV dramas.", 
+                    general:"The 80 murals were chosen in 1918, with the first 40, depicting the earlier half of Emperor Meiji’s life, painted by Japanese-style artists and the last 40, depicting the later half, by Western-style artists, all in a uniform size of about 3 by 2.7 meters, and the gallery’s upkeep is paid entirely from the budget of Meiji Jingu, which accepts no outside support.",
+                    expert:"The design grew out of a 1918 architectural competition won by Kobayashi Masatsugu, and Takahashi Teitaro and Kobayashi Seiichi completed the plans, producing a symmetrical granite-clad building with a 15-meter dome in the Secession style, which contrasts with the traditional wooden appearance of the nearby Meiji Jingu Treasure Museum and is said to reflect the dual nature of Emperor Meiji as a symbol of modernization and a keeper of tradition."},
             indepth:{
-                    beginner:"", 
-                    general:"",
-                    expert:""},
+                    beginner:"The gallery stands on the site where the funeral ceremony for Emperor Meiji was held, and its stone dome and grand marble hall still look much as they did when it was built, while visitors in the past could walk right up to the paintings but now see them from two meters away behind special glass, and the square pond in front of the building was once a children’s pool called Kappa Paradise for three years from 1959, with the whole building lit up at night since 1990.", 
+                    general:"Making the paintings took far longer than building the gallery, and only 5 of the 80 were ready when it was completed in 1926, with the last five delivered in 1936 and seven of the artists dying before they could finish, and after the gallery closed in 1944 and was occupied by the Allied forces from 1945 to 1947, it reopened in 1948, though 18 war-related paintings were shown again only in 1952, and the full public opening had followed in 1937.",
+                    expert:"A five-year restoration of the damaged murals began in 1984, and in 1989 a museum-glass screen was installed along 250 meters of wall to protect them, together with special lighting, after which the building was designated a Tokyo historic building in 2003 and, in 2011, an Important Cultural Property together with the Meiji Jingu Treasure Museum, with the circular platform of the funeral site, the square pond, and the round pond with its fountain designated as accessories."},
 
         },
         metadata: {
             film:"Your Name.",
             year:"2016",
             address: "1-1 Kasumigaoka-machi, Shinjuku",
-            scene: "Taki and his classmates pass by Meiji Jingu Gaien after school",
-            angle: ""
-        }
-   }
+            scene: "Taki and his classmates pass by Meiji Jingu Gaien Park after school",
+            angle: "From across the sidewalk just outside Meiji Jingu Gaien Park, where the Meiji Memorial Picture Gallery stands"
+        },
+         fun_fact: ['In Tanizaki Jun’ichiro’s novel The Makioka Sisters, set in the 1930s, there is a scene in which a character passing through Jingu Gaien by car looks up at the Meiji Memorial Picture Gallery in amazement, showing that it was already a symbol of Tokyo at the time.']
+    }
 
 
 
