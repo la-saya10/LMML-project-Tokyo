@@ -113,8 +113,9 @@ body {
 
 
 .link-row a:hover {
-  background: #5100ff;        /* 薄い青灰色に変わる */
-  border-color: #ca971f;      /* 枠線をナビバーと同じ濃い青に */
+  background: #24292f;        /* 薄い青灰色に変わる */
+  color: #f6f8fa;
+  border-color:  #2c3e50;      /* 枠線をナビバーと同じ濃い青に */
 }
 
 
@@ -433,7 +434,9 @@ body {
 }
 
 .item-description a:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: #2c3e50;
+  color: #f6f8fa;
+  border-color:  #2c3e50;
 }
 
 

@@ -418,7 +418,7 @@ const locations = {
 
     "tokyo-station": {
         title: "Tokyo Station",
-        images: [""],
+        images: ["tokyostation2.jpg"],
         qr_image:["../assets/img/QR_tokyostation.png"],
         near_station: ["Inside Tokyo Station"],
         best_time: ["Anytime"],
@@ -513,7 +513,7 @@ const locations = {
             scene: "Taki and his classmates pass by Meiji Jingu Gaien Park after school",
             angle: "From across the sidewalk just outside Meiji Jingu Gaien Park, where the Meiji Memorial Picture Gallery stands"
         },
-         fun_fact: ['In Tanizaki Jun’ichiro’s novel The Makioka Sisters, set in the 1930s, there is a scene in which a character passing through Jingu Gaien by car looks up at the Meiji Memorial Picture Gallery in amazement, showing that it was already a symbol of Tokyo at the time.']
+         fun_fact: ['In Junichiro Tanizaki’s novel The Makioka Sisters, set in the 1930s, there is a scene in which a character passing through Jingu Gaien by car looks up at the Meiji Memorial Picture Gallery in amazement, showing that it was already a symbol of Tokyo at the time.']
     }
 
 
